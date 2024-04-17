@@ -1,0 +1,124 @@
+<h1> USER ID: 2</h1>
+<h1> user_name: user1</h1>
+<a href="/UI_Quiz/handle_logout">Logout</a>
+<html>
+
+<head>
+    <title>Input Numbers</title>
+</head>
+
+<body>
+    <h1>This is home Page</h1>
+    <h1>Choose one Quiz and make exam </h1>
+    <div id="quiz11" style='border: 1px solid black; padding: 10px; margin-bottom: 10px;'>
+        <p><strong>Title:</strong> SOA QUIZ</p>
+        <p><strong>Description:</strong> This is quiz for SOA, prepare pass the exam !!!</p>
+        <p><strong>Created At:</strong> 2024-04-01</p>
+        <form method="POST" action="/UI_Quiz/takeTheExam">
+            <input type="hidden" name="quiz_id" value="11">
+            <input type="hidden" name="user_id" value="2">
+            <button>Take the Exam</button>
+        </form>
+        <div id="session_with_quiz_id">
+        </div>
+    </div>
+    <div id="quiz47" style='border: 1px solid black; padding: 10px; margin-bottom: 10px;'>
+        <p><strong>Title:</strong> Toan</p>
+        <p><strong>Description:</strong> Bo de danh cho mon toan</p>
+        <p><strong>Created At:</strong> 2024-04-07</p>
+        <form method="POST" action="/UI_Quiz/takeTheExam">
+            <input type="hidden" name="quiz_id" value="47">
+            <input type="hidden" name="user_id" value="2">
+            <button>Take the Exam</button>
+        </form>
+        <div id="session_with_quiz_id">
+        </div>
+    </div>
+    <div id="quiz50" style='border: 1px solid black; padding: 10px; margin-bottom: 10px;'>
+        <p><strong>Title:</strong> TEST</p>
+        <p><strong>Description:</strong> test</p>
+        <p><strong>Created At:</strong> 2024-04-07</p>
+        <form method="POST" action="/UI_Quiz/takeTheExam">
+            <input type="hidden" name="quiz_id" value="50">
+            <input type="hidden" name="user_id" value="2">
+            <button>Take the Exam</button>
+        </form>
+        <div id="session_with_quiz_id">
+        </div>
+    </div>
+    <div id="quiz53" style='border: 1px solid black; padding: 10px; margin-bottom: 10px;'>
+        <p><strong>Title:</strong> TestBoNay</p>
+        <p><strong>Description:</strong> testBonay</p>
+        <p><strong>Created At:</strong> 2024-04-07</p>
+        <form method="POST" action="/UI_Quiz/takeTheExam">
+            <input type="hidden" name="quiz_id" value="53">
+            <input type="hidden" name="user_id" value="2">
+            <button>Take the Exam</button>
+        </form>
+        <div id="session_with_quiz_id">
+        </div>
+    </div>
+    <script>
+        function hideScore_show() {
+            var infoBox = document.getElementById("score_show");
+            infoBox.style.display = "none"; // Hide the info box
+        }
+
+        setTimeout(hideScore_show, 4000); 
+    </script>
+    <style>
+        h3 {
+            text-align: center;
+            /* Center the text */
+            font-family: Arial, sans-serif;
+            /* Choose a font */
+            color: #333;
+            /* Text color */
+            background-color: #f0f0f0;
+            /* Background color */
+            padding: 10px;
+            /* Add padding */
+            border-radius: 5px;
+            /* Add border radius for rounded corners */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            /* Add shadow */
+            width: 50%;
+            /* Set width */
+            margin: 0 auto;
+            /* Center horizontally */
+        }
+
+        .collapsible {
+            background-color: #f1f1f1;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+        }
+
+        .content {
+            padding: 0 18px;
+            display: none;
+            overflow: hidden;
+            background-color: #f1f1f1;
+        }
+
+        .option {
+            margin-left: 20px;
+            width: fit-content;
+            /* Adjust the value to change the indentation */
+        }
+    </style>
+    <script>
+        function toggleContent(id) {
+            var content = document.getElementById(id);
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        }
+    </script>
